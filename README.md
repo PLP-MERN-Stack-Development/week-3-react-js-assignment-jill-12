@@ -1,12 +1,100 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React + Vite Demo App
 
-Currently, two official plugins are available:
+A modern React application built with Vite, demonstrating component architecture, state management, theming, API integration, and responsive design using Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Component-based architecture with reusable components
+- State management using React hooks
+- Theme switching with React Context API
+- Task Manager with add, toggle, delete, and filter functionality
+- API integration demo with search, loading, error handling, and pagination
+- Responsive design powered by Tailwind CSS
+- Routing with React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>/week-3-react-js-assignment-jill-12
+   ```
+
+2. Install dependencies using your preferred package manager (pnpm, npm, or yarn):
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+## Usage
+
+Start the development server:
+
+```bash
+pnpm run dev
+# or
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal).
+
+## Build
+
+To create a production build:
+
+```bash
+pnpm run build
+# or
+npm run build
+# or
+yarn build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm run preview
+# or
+npm run preview
+# or
+yarn preview
+```
+
+## Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- ESLint for linting and code quality
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components (Button, Card, Layout, TaskManager, etc.)
+├── context/          # React Context for theme management
+├── hooks/            # Custom React hooks (e.g., useLocalStorage)
+├── pages/            # Route components (Home, Tasks, ApiDemo)
+├── assets/           # Static assets like images and icons
+├── App.jsx           # Main app component with routing
+├── main.jsx          # Entry point
+└── index.css         # Global styles
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Created by Jill. Feel free to reach out for questions or feedback.
+
